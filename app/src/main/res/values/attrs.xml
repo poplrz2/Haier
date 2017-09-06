@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_actionBar">
+        <attr name="title" format="string"></attr>
+        <attr name="height" format="dimension"></attr>
+        <attr name="background_color" format="color"></attr>
+        <attr name="right_text" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

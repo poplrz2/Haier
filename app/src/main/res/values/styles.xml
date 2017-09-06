@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/default_color</item>
+    <item name="colorPrimaryDark">@color/default_color</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+
+    <style name="textBoldStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+    <style name="textNormalStyle">
+        <item name="android:textSize">14dip</item>
+    </style>
+
+    <!--ViewPageIndicator的样式-->
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+    <style name="MyTheme" parent="AppBaseTheme">
+
+        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/viewpager_title_textcolor</item>
+    </style>
+</resources>

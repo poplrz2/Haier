@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ys.haier">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ForgetPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PerfectUserInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>>
+
+        <activity android:name=".Connecting_DeviceActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".NewsDetailsActivity"
+            android:launchMode="singleInstance"/>
+
+        <activity android:name=".MoreNews"
+            android:theme="@style/MyTheme"
+            android:launchMode="singleInstance"/>
+
+        <activity android:name=".ServeDetailsActivity"
+            android:launchMode="singleInstance"/>
+
+        <activity android:name=".MoreServe"
+            android:theme="@style/MyTheme"
+            android:launchMode="singleInstance"/>
+
+        <activity android:name=".Doctor_Details"/>
+
+        <activity android:name=".InformationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".HealthActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".AttationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".DeviceActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

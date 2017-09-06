@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ys.haier.LoginActivity">
+<ImageView
+    android:id="@+id/bg"
+    android:background="@drawable/haier"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/login_n"
+        android:layout_below="@+id/bg"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/login_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/yonghuming" />
+
+        <EditText
+            android:text="admin"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:id="@+id/login_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/white"
+            android:hint="请输入用户名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/login_p"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/login_n"
+        android:background="@drawable/login_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/mima" />
+
+        <EditText
+            android:text="123"
+            android:paddingLeft="8dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:id="@+id/login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/white"
+            android:hint="请输入密码" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:text="登   录"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_btn_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/login_p"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tv_forgotPwd"
+        android:layout_below="@+id/login"
+        android:layout_alignParentLeft="true"
+        android:text="忘记密码？"
+        android:textColor="@color/default_color"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_below="@+id/login"
+        android:layout_alignParentRight="true"
+        android:text="注册"
+        android:textColor="@color/default_color"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

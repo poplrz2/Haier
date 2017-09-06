@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ys.haier.ForgetPwdActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/default_color"
+        android:gravity="center"
+        android:text="找回密码"
+        android:textColor="@android:color/white"></TextView>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/register_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/number" />
+
+        <EditText
+            android:id="@+id/et_forget_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textCursorDrawable="@drawable/text_cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/register_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/code" />
+
+        <EditText
+            android:id="@+id/et_forget_code"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textCursorDrawable="@drawable/text_cursor" />
+
+        <Button
+            android:id="@+id/btn_forget_getCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_select_bg"
+            android:text="获取验证码"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/register_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/pwd" />
+
+        <EditText
+            android:id="@+id/et_forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textCursorDrawable="@drawable/text_cursor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/register_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/pwd_ok" />
+
+        <EditText
+            android:id="@+id/et_forget_pwd_ok"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textCursorDrawable="@drawable/text_cursor" />
+    </LinearLayout>
+        <Button
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/btn_forget_isRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"
+            android:text="完成"
+            android:textColor="@android:color/white" />
+
+
+</LinearLayout>

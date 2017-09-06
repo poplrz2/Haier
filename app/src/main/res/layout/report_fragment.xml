@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/report_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/default_color"
+        android:gravity="center"
+        android:text="健康报告"
+        android:textColor="@android:color/white" />
+
+    <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/reprot_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/default_color"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/default_color"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/reprot_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

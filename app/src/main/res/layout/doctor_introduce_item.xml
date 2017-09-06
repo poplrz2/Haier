@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_url"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/docor_icon" />
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="李医生"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科室："
+                android:textColor="@color/default_color"/>
+
+            <TextView
+                android:id="@+id/de_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="儿科" />
+
+            <TextView
+                android:id="@+id/jt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主治医生"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介："
+                android:textColor="@color/default_color"/>
+
+            <TextView
+                android:id="@+id/doctor_grjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text="山西分会儿科学组委会 。毕业以来一直从事儿科临床及教学工作,山西分会儿科学组委会 。毕业以来一直从事儿科临床及教学工作" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dialog_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始咨询"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/qianhui_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zxwz_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="咨询问诊："
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/qianhui_color"/>
+
+                <TextView
+                    android:id="@+id/relation_BJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="@color/qianhui_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元/一小时"
+                    android:textColor="@color/qianhui_color"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

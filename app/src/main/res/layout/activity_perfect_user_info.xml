@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_actionBar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ys.haier.PerfectUserInfoActivity">
+
+    <com.ys.haier.views.Custom_ActionBar
+        android:id="@+id/cab"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        custom_actionBar:title="完善信息"
+        custom_actionBar:right_text="true"
+        ></com.ys.haier.views.Custom_ActionBar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="姓名"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:id="@+id/perfect_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/sex" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="性别"
+                    android:textColor="@color/qianhui_color" />
+
+                <TextView
+                    android:id="@+id/tv_perfect_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="点击选择" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/birthday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="出生年月"
+                    android:textColor="@color/qianhui_color" />
+
+                <TextView
+                    android:id="@+id/tv_perfect_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="点击选择" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="电话号码"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:id="@+id/et_perfect_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="家庭住址"
+                    android:textColor="@color/qianhui_color" />
+
+                <TextView
+                    android:id="@+id/tv_perfect_provinces"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:hint="选择省" />
+                   <TextView
+                       android:textStyle="bold"
+                       android:text="省/市"
+                       android:textSize="18sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_perfect_cities"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:hint="选择市" />
+                <TextView
+                    android:textStyle="bold"
+                    android:text="市/区"
+                    android:textSize="18sp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_perfect_address"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_large"
+                android:gravity="center"
+                android:hint="请输入具体地址"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/text_cursor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/height" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="身高"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:id="@+id/et_perfect_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+          <TextView
+              android:text="CM"
+              android:textStyle="bold"
+              android:textSize="18sp"
+              android:layout_gravity="center"
+              android:layout_marginRight="16dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/weight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="体重"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_perfect_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="KG"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/line_large"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/family_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="家族遗传病史"
+                        android:textColor="@color/qianhui_color" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_perfect_family_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/et_bg_large"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:padding="4dp"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/family" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="家属姓名"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:id="@+id/et_family_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/relationship" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="关系"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:id="@+id/et_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/register_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/contact_number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="家属联系电话"
+                    android:textColor="@color/qianhui_color" />
+
+                <EditText
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:id="@+id/et_contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/text_cursor" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_perfect_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/login_btn_bg"
+                android:text="完成"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

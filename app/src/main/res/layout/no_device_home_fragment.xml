@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/default_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="74dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="无设备"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/msg" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_device"
+        android:background="@drawable/no_device"
+         android:gravity="bottom"
+        android:textColor="@color/qianhui_color"
+        android:text="需要添加设备\n请点击添加"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+       android:layout_centerInParent="true"
+        android:paddingBottom="24dp"
+        android:paddingLeft="50dp"
+        android:textSize="11sp"
+      />
+</RelativeLayout>
