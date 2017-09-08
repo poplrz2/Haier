@@ -11,7 +11,9 @@ import retrofit2.http.Field;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.Part;
 import retrofit2.http.Query;
 
 /**
@@ -59,4 +61,7 @@ public interface MyServer {
     @POST("SJ_Handler/YH_Login.ashx")
     Observable<String> getServeDetials_guanzhu(@Field("action") String action,@Field("FW_ID")String fw_id,@Field("dlid")String dlid);
 
+    @FormUrlEncoded
+    @POST("SJ_Handler/YH_Login.ashx")
+    Observable<String> uploadHeadPortrait(@Field("action") String action,@Field("User_ID")String User_ID,@Field("Stream")String Stream,@Field("img_Name")String img_Name);
 }

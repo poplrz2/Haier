@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".MyApp"
@@ -29,8 +30,11 @@
 
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait" >
-
-        </activity>>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".Connecting_DeviceActivity"
             android:screenOrientation="portrait"></activity>
@@ -39,7 +43,9 @@
 
         <activity android:name=".MoreNews"
             android:theme="@style/MyTheme"
-            android:launchMode="singleInstance"/>
+            android:launchMode="singleInstance">
+
+        </activity>
 
         <activity android:name=".ServeDetailsActivity"
             android:launchMode="singleInstance"/>
@@ -53,11 +59,16 @@
         <activity android:name=".InformationActivity"
             android:screenOrientation="portrait"/>
 
+
         <activity android:name=".OrderActivity"
-            android:screenOrientation="portrait"/>
+            android:theme="@style/MyTheme"
+            android:launchMode="singleInstance">
+
+        </activity>
 
         <activity android:name=".HealthActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme">
 
         </activity>
 
@@ -66,13 +77,33 @@
 
         <activity android:name=".DeviceActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".HeadPortraitActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".MessageActivity"
+            android:screenOrientation="portrait">
+
         </activity>
 
+        <activity android:name=".HealthBreathActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".HealthSleepActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".HealthPregnantActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".HealthLiveActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

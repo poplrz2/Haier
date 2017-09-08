@@ -112,4 +112,10 @@ public class HttpUtil {
                 .subscribe(new MyObserverListener(observerListener));
     }
 
+    public void uploadHeadPoritrait(String User_ID,String Stream,String img_Name,ObserverListener observerListener){
+        myServer.uploadHeadPortrait("UPHead",User_ID,Stream,img_Name)
+                .compose(new Observable_Thread())
+                .subscribe(new MyObserverListener(observerListener));
+    }
+
 }

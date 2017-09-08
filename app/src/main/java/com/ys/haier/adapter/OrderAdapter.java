@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.ys.haier.R;
+import com.ys.haier.util.CircleTransform;
 
 import java.util.ArrayList;
 
@@ -16,65 +18,24 @@ import java.util.ArrayList;
  * Created by chen on 2017/9/6.
  */
 
-public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.MyViewHolder> {
+public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.MyViewHolder> {
 
     private ArrayList<String> list = new ArrayList<>();
     private Context context;
 
-    public DeviceAdapter(Context context){
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
+    public OrderAdapter(Context context){
         this.context = context;
-    }
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
 
-    public void addData(){
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
-        list.add("1");
     }
 
     @Override
@@ -86,7 +47,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.MyViewHold
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         if(viewType == 0){
-            return new MyViewHolder(inflater.inflate(R.layout.item_device,parent,false));
+            return new MyViewHolder(inflater.inflate(R.layout.item_order,parent,false));
         }else{
             return new MyViewHolder(inflater.inflate(R.layout.item_footer,parent,false));
         }
@@ -95,7 +56,12 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         if(getItemViewType(position) == 0){
-
+            Picasso.with(context)
+                    .load("http://img4.imgtn.bdimg.com/it/u=3929251423,454148251&fm=27&gp=0.jpg")
+                    .transform(new CircleTransform())
+                    .error(R.drawable.default_binner_pic)
+                    .placeholder(R.mipmap.ic_launcher)
+                    .into(holder.iv_head_portrait);
         }else{
 
         }
@@ -110,10 +76,10 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tv_name;
+        ImageView iv_head_portrait;
         public MyViewHolder(View itemView) {
             super(itemView);
-
+            iv_head_portrait = itemView.findViewById(R.id.iv_head_portrait);
         }
     }
 

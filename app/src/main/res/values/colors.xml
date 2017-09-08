@@ -8,4 +8,7 @@
 
     <color name="colorAdvise">#30a6fd</color>
     <color name="touming">#00000000</color>
+
+    <color name="color_little_green">#64bd98</color>
+    <color name="color_little_red">#ff3131</color>
 </resources>

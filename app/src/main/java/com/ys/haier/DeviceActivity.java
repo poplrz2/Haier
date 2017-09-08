@@ -1,6 +1,8 @@
 package com.ys.haier;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -44,7 +46,27 @@ public class DeviceActivity extends AppCompatActivity {
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 if (newState == RecyclerView.SCROLL_STATE_IDLE && lastItem + 1 == adapter.getItemCount()) {
-                    Toast.makeText(DeviceActivity.this, "123", Toast.LENGTH_SHORT).show();
+
+                    final Handler handler = new Handler(){
+                        @Override
+                        public void handleMessage(Message msg) {
+                            super.handleMessage(msg);
+                            adapter.notifyDataSetChanged();
+                        }
+                    };
+
+                    new Thread(){
+                        @Override
+                        public void run() {
+                            try {
+                                sleep(1000);
+                                adapter.addData();
+                                handler.sendEmptyMessage(1);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
                 }
             }
 

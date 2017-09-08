@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.ys.haier.adapter.AttationAdapter;
 import com.ys.haier.adapter.DeviceAdapter;
 import com.ys.haier.adapter.MessageAdapter;
 import com.ys.haier.util.DividerItemDecoration;
@@ -20,9 +19,9 @@ import butterknife.ButterKnife;
  * Created by chen on 2017/9/7.
  */
 
-public class AttationActivity extends AppCompatActivity {
+public class MessageActivity extends AppCompatActivity {
 
-    AttationAdapter adapter;
+    MessageAdapter adapter;
     SwipeRefreshLayout swipeRefreshLayout;
     RecyclerView recyclerView;
     int lastItem;
@@ -35,7 +34,7 @@ public class AttationActivity extends AppCompatActivity {
 
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         recyclerView = (RecyclerView) findViewById(R.id.rv_data);
-        adapter = new AttationAdapter(this);
+        adapter = new MessageAdapter(this);
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
 
         recyclerView.setLayoutManager(linearLayoutManager);
